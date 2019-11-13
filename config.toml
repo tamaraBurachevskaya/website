@@ -23,11 +23,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     { title = "Steemit", link = "https://steemit.com/@cybercongress" },
     { title = "YouTube", link = "https://www.youtube.com/channel/UCXgkFmGLhUcXSTp6d4cWEvg/featured" } ]
   BookToC = 3
-  BookMenuBundleCyb = '/docs/cyb/menu'
-  BookMenuBundleCyberd = '/docs/cyberd/menu'
-  BookMenuBundleChaingear = '/docs/chaingear/menu'
-  BookMenuBundleJsAmino = '/docs/js-amino/menu'
-  BookMenuBundleJsCosmos = '/docs/js-cosmos/menu'
 
   # BookSection = '/docs/cyb'
   BookEnableJS = true
