@@ -11,10 +11,10 @@
     <div class="container home">
 
       <p id='index' class="meta">
-        <a href="{{ "/index.xml" | absURL }}" class="rss"><img src="/img/icon-rss.svg" /> Available as RSS</a>
+        <a href="{{ "/index.xml" | absURL }}" class="rss"><img src="/img/icon-rss.svg" />RSS</a>
       </p>
 
-      <h1 class='color-white'>Cyberlog</h1>
+      <h1>Публикации</h1>
 
       <p>This is Cyberlog, a series of communications about the
         <a href="/#products">cyber•Congress Project</a>. These posts are written by the cyber•Congress
@@ -29,7 +29,7 @@
       {{ end }}
       {{ end }}
 
-      <p>cyberlog entries: {{ len $pages }}</p>
+      <p>Количество  публикаций: {{ len $pages }}</p>
 
       <ul class="list-unstyled post-list">
 
@@ -62,7 +62,7 @@
                     </span>
                     <span class="timestamp__time">{{ dateFormat "2006-01-02" .Date }}</span>
                   </div>
-                  <p>{{ .Summary }}</p>
+                  <!-- <p>{{ .Summary }}</p> -->
                 </a>
 
               </div>

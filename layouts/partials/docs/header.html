@@ -8,15 +8,15 @@
             <input id="menu-toggle" type="checkbox" class="menu-toggle">
             <label for="menu-toggle"></label>
             <ul class="list-unstyled list-inline cf flex align-center">
-                <li><a href="/#propducts">Products</a></li>
                 <li><a href="/docs"
                         {{ if and (eq .page.Type "docs") (not (eq .page.Params.pagename "install")) }}class="current-item"
-                        {{ end }}>Docs</a></li>
+                        {{ end }}>О мне</a></li>
                 <!-- <li><a href="http://ai.cybercongress.ai/" {{ if or (eq .page.Type "forum") (eq .page.Data.Singular "forum") }}class="current-item"
-                    {{ end }}>Forum</a></li> -->
+                        {{ end }}>Forum</a></li> -->
+                <li><a href="/work">Работы</a></li>
                 <li><a href="/post"
                         {{ if or (eq .page.Type "blog") (eq .page.Data.Singular "author") }}class="current-item"
-                        {{ end }}>Blog</a></li>
+                        {{ end }}>Публикации</a></li>
             </ul>
         </nav>
 
