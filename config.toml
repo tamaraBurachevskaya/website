@@ -2,7 +2,7 @@ baseURL = "/"
 relativeURLs = true
 googleAnalytics = "UA-52930282-2"
 ignoreFiles = [ "\\.js\\.tmp*"]
-title= "cyber~Congress"
+title= ""
 
 DefaultContentLanguage = "en"
 languageCode = "en-us"
@@ -11,11 +11,11 @@ enableMissingTranslationPlaceholders = false
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-  domain = "https://cybercongress.ai"
-  name = "cyber~Congress"
-  title = "cyber~Congress"
-  description = "A peer-to-peer hypermedia protocol to make the web faster, safer, and more open."
-  author = "cyber~Congress"
+  domain = ""
+  name = ""
+  title = ""
+  description = ""
+  author = ""
   github = ""
   social = [ { title = "Viber", link = "#" },
     { title = "Telegram", link = "#" },

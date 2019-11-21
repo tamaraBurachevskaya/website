@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{{- partial "docs/shared" -}}
+<html{{ with .Site.Language.Lang }} lang="{{ . }}" {{ end }}>
+
+  <head>
+    <!-- {{ partial "docs/html-head" . }} -->
+    <!-- {{ partial "docs/inject/head" . }} -->
+    {{ partial "docs/inject/head.html" . }}
+
+  </head>
+
+  <body id='docs'>
+    {{ partial "docs/header.html"  }}
+    {{ partial "docs/mobile-header" . }}
+    <!-- {{ partial "header.html" }} -->
+    <input type="checkbox" style="display: none" id="menu-control" />
+    <main class="flex container docs">
+
+      <div class="book-page">
+        <h3 style="text-align:center">Здравствуйте, уважаемые коллеги и родители!</h3>
+        <div style="justify-content: center;" class="grid-flex-container">
+          <div style="display: flex;
+          justify-content: center;
+          align-items: center; width: 30%;" class="grid-flex-cell-1of2 products-cell">
+            <img style="width: 200px;" src="/images/img.jpeg" id="adout-img" alt="adout-img" />
+          </div>
+          <div class="grid-flex-cell-1of2 products-cell">
+            <p>Я, Бурачевская Тамара Владимировна, логопед Многопрофильного гуманитарного учреждения обучения и развития
+              "ЛОГОС", Республика Беларусь, Минск.</p>
+
+            <p>Учитель-дефектолог средней школы N 191 г.Минска, преподаватель кафедры педагогики и психологии
+              инклюзивного
+              образования БГПУ. Магистр педагогических наук. Имеется 2 квалификационная категория "учитель-дефектолог".
+              Финалист Республиканского конкурса "Компьютер. Образование. Интернет - 2019"</p>
+
+            <p>В 2016-2017 учебном году мной было проведено исследование на тему: "Арт-технологии как средство
+              коррекционной работы на уроках изобразительного искусства с учащимися младшего школьного возраста с
+              тяжелыми
+              нарушениями речи".</p>
+          </div>
+
+        </div>
+        {{ template "main" . }}
+        {{ partial "docs/git-footer" . }}
+        <!-- {{ partial "docs/inject/footer" . }} -->
+      </div>
+
+      <!-- {{ template "toc" . }} -->
+    </main>
+    {{ partial "footer.html" . }}
+
+    {{ partial "docs/inject/body" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
+  </body>
+
+  </html>
