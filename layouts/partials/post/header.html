@@ -1,26 +1,29 @@
 <header class="header-has-logo" {{ if eq .page.Params.pagetype "subdoc"}}{{ else }} id="stars" {{ end }}>
-  <div class="container cf">
-    <h1 class="pull-left logo margin-bottom">
-      <a href="/" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
-      <a href="/"><span class='logo-text'>cyber~Congress</span></a>
-    </h1>
-    <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
-      <input id="menu-toggle" type="checkbox" class="menu-toggle">
-      <label for="menu-toggle"></label>
-      <ul class="list-unstyled list-inline cf">
-        <li><a href="/docs"
-            {{ if and (eq .page.Type "docs") (not (eq .page.Params.pagename "install")) }}class="current-item"
-            {{ end }}>О мне</a></li>
-        <li><a href="/work">Работы</a></li>
-        <!-- <li><a href="http://ai.cybercongress.ai/" {{ if or (eq .page.Type "forum") (eq .page.Data.Singular "forum") }}class="current-item"
-                {{ end }}>Forum</a></li> -->
-        <li><a href="/post" {{ if or (eq .page.Type "blog") (eq .page.Data.Singular "author") }}class="current-item"
-            {{ end }}>Публикации</a></li>
-      </ul>
-    </nav>
-
-  </div>
-  <div class="view-more">
-    <label>View more</label><a href="#"></a>
-  </div>
-</header>
+    <div class="container cf">
+      <h1 class="pull-left logo">
+        <a href="/"><span class='logo-text'>Логопед в Минске</span></a>
+      </h1>
+      <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+        <input id="menu-toggle" type="checkbox" class="menu-toggle">
+        <label for="menu-toggle"></label>
+        <ul class="list-unstyled list-inline cf">
+          <li><a href="/docs"
+              {{ if and (eq .page.Type "docs") (not (eq .page.Params.pagename "install")) }}class="current-item"
+              {{ end }}>О мне</a></li>
+          <!-- <li><a href="http://ai.cybercongress.ai/" {{ if or (eq .page.Type "forum") (eq .page.Data.Singular "forum") }}class="current-item"
+              {{ end }}>Forum</a></li> -->
+          <li><a href="/work">Работы</a></li>
+          <li><a href="/post" {{ if or (eq .page.Type "blog") (eq .page.Data.Singular "author") }}class="current-item"
+              {{ end }}>Пуибликации</a></li>
+        </ul>
+      </nav>
+      {{ if eq .hero "homepage" }}
+      <div class="hero hero-home">
+        <div class="hero-text">
+          <h2 class="headline-main">Говорим красиво и правильно!</h2>
+          {{ end }}
+        </div>
+        <div class="view-more">
+          <label>View more</label><a href="#"></a>
+        </div>
+  </header>

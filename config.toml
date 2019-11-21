@@ -17,11 +17,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   description = "A peer-to-peer hypermedia protocol to make the web faster, safer, and more open."
   author = "cyber~Congress"
   github = ""
-  social = [ { title = "Twitter", link = "https://twitter.com/cyber_devs" },
-    { title = "Telegram", link = "https://t.me/fuckgoogle" },
-    { title = "Reddit", link = "https://www.reddit.com/r/cybercongress/" },
-    { title = "Steemit", link = "https://steemit.com/@cybercongress" },
-    { title = "YouTube", link = "https://www.youtube.com/channel/UCXgkFmGLhUcXSTp6d4cWEvg/featured" } ]
+  social = [ { title = "Viber", link = "#" },
+    { title = "Telegram", link = "#" },
+    { title = "Whatsapp", link = "#" },]
   BookToC = 3
 
   # BookSection = '/docs/cyb'

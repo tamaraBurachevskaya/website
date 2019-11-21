@@ -16,11 +16,6 @@
 
       <h1>Публикации</h1>
 
-      <p>This is Cyberlog, a series of communications about the
-        <a href="/#products">cyber•Congress Project</a>. These posts are written by the cyber•Congress
-        team, and members of the broader community. The subject matter is broad:
-        project news, protocol explanations, development stories, usage examples,
-        application spotlights, and more.</p>
 
       {{ $pages := (where (where .Site.Pages "Section" "post") "Kind" "page") }}
       {{ range .Site.Home.Translations }}

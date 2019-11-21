@@ -41,25 +41,19 @@ ul li {
     display: flex;
     align-items: center;
     margin-left: -15px;
+    padding: 27px 15px;
     a{
       display: flex;
       align-items: center;
     }
-    span{
-        color: #000000;
-        font-size: 16px;
-    }
 } 
 
-@media screen and (max-width: 1000px) {
-    .logo-text {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .logo-text {
-        display: block;
+.logo-text {
+  font-size: 20px;
+    color: rgba(0, 0, 0, 0.478);
+    font-weight: 600;
+    &:hover{
+      color:rgba(63, 62, 62, 0.478);
     }
 }
 
